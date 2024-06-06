@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_spacing"
+    tools:context=".activity.SignUpFragment">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/description_photo"
+        tools:srcCompat="@sample/posts.json/data/authorAvatar" />
+
+    <Button
+        android:id="@+id/uploadAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_button_min_size"
+        android:layout_below="@id/avatar"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/upload_avatar" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_field_min_height"
+        android:layout_below="@id/uploadAvatar"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@id/login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_field_min_height"
+        android:layout_below="@id/username"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="@string/login"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_field_min_height"
+        android:layout_below="@id/login"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_field_min_height"
+        android:layout_below="@id/password"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_button_min_size"
+        android:layout_below="@id/repeat_password"
+        android:text="@string/sign_up" />
+
+</RelativeLayout>
